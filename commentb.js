@@ -30,7 +30,7 @@ var disqus_url = disqus_blogger_current_url;
     var visibleDivId = null;
     function toggleVisibility(divId) {
       if(visibleDivId === divId) {
-        visibleDivId = null;
+        visibleDivId = divId; /* Hidden = null */
       } else {
         visibleDivId = divId;
       }
